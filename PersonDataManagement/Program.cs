@@ -51,7 +51,7 @@
             listOfPersonInCity.RemoveAll(e => e.Name == "SAM");
             if (listOfPersonInCity.TrueForAll(e => e.Name != "SAM" ))
             {
-                Console.WriteLine("No person is found with 'SAM' Name In current list);
+                Console.WriteLine("No person is found with 'SAM' Name In current list");
             }
         }
 
