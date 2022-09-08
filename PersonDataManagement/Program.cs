@@ -32,8 +32,14 @@
             //code get the Average of all peoples age
             Console.WriteLine("\nGetting Average of All prson age:");
             double AvgAge = listOfPersonInCity.Average(e => e.Age);
-            Console.WriteLine("the Average of  all Person age is : " +AvgAge);  
+            Console.WriteLine("the Average of  all Person age is : " +AvgAge);
 
+            //checking whether a person having name 'SAM' exists or not in a list
+            Console.WriteLine("\nchecking whether a person having name 'SAM' exists or not in a list");
+            if(listOfPersonInCity.Exists(e => e.Name == "SAM"))
+            {
+                Console.WriteLine("Yes, A person Having Name 'SAM' exists in ArgumentOutOfRangeException list");
+            }
         }
 
     }
