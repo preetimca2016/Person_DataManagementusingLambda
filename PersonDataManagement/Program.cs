@@ -13,15 +13,8 @@
             listOfPersonInCity.Add(new Person("106", "Elan", "34 Main Street Gujrat India", 65));
             listOfPersonInCity.Add(new Person("107", "SAM", "1208 Main Street NewYork ", 85));
             listOfPersonInCity.Add(new Person("101", "Parth", "126 Main Street UtterPradesh UP", 65));
-            listOfPersonInCity.Add(new Person("101", "SAM", "128 Main Street Gurugram India", 95));
-
-
-            //retrieve the first two personsfrom the list
-            Console.WriteLine("Retrieve top two Aged Person from the list Who are older than 60 Years");
-            foreach (Person person in listOfPersonInCity.FindAll(e => (e.Age >= 60)).Take(2).ToList())
-            {
-                Console.WriteLine("Name: " + person.Name + "\t\tAge: " + person.Age); ;
-            }
+            listOfPersonInCity.Add(new Person("101", "SAM", "128 Main Street Gurugram India", 95));          
+            
         }
 
     }
