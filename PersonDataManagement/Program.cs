@@ -46,6 +46,13 @@
             {
                 Console.WriteLine("Name : " + pers.Name + "\t\tAge: " + pers.Age);
             }
+            //Remove All the people Having name 'SAM'
+            Console.WriteLine("\nRemove All the people Having name 'SAM'");
+            listOfPersonInCity.RemoveAll(e => e.Name == "SAM");
+            if (listOfPersonInCity.TrueForAll(e => e.Name != "SAM" ))
+            {
+                Console.WriteLine("No person is found with 'SAM' Name In current list);
+            }
         }
 
     }
