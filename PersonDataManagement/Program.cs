@@ -29,6 +29,10 @@
             {
                 Console.WriteLine("Name: " + person.Name + "\t\tAge: " + person.Age); ;
             }
+            //code get the Average of all peoples age
+            Console.WriteLine("\nGetting Average of All prson age:");
+            double AvgAge = listOfPersonInCity.Average(e => e.Age);
+            Console.WriteLine("the Average of  all Person age is : " +AvgAge);  
 
         }
 
