@@ -40,6 +40,12 @@
             {
                 Console.WriteLine("Yes, A person Having Name 'SAM' exists in ArgumentOutOfRangeException list");
             }
+            //Skip each person whose age is less than 60.
+            Console.WriteLine("\nSkip each person whose age is less than 60.");
+            foreach (Person pers in listOfPersonInCity.SkipWhile(e => e.Age < 60 ))
+            {
+                Console.WriteLine("Name : " + pers.Name + "\t\tAge: " + pers.Age);
+            }
         }
 
     }
