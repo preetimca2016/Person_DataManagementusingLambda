@@ -22,6 +22,12 @@
             {
                 Console.WriteLine("Name: " + person.Name + "\t\tAge: " + person.Age); ;
             }
+            //check any person age between  13 and 18 years
+            Console.WriteLine("\n Checking whether any Person is teen-ager or not...");
+            foreach (Person person in listOfPersonInCity.FindAll(e => (e.Age >= 13 && e.Age <= 18)))
+            {
+                Console.WriteLine("Name: " + person.Name + "\t\tAge: " + person.Age); ;
+            }
         }
 
     }
