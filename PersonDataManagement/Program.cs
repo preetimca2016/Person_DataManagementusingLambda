@@ -16,7 +16,7 @@
             listOfPersonInCity.Add(new Person("101", "SAM", "128 Main Street Gurugram India", 95));
 
 
-            //retrieve the first two personsfrom the list
+            //retrieve the first two personsfrom the list.here ToList is use for to convert into a list again
             Console.WriteLine("Retrieve top two Aged Person from the list Who are older than 60 Years");
             foreach (Person person in listOfPersonInCity.FindAll(e => (e.Age >= 60)).Take(2).ToList())
             {
